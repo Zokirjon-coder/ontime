@@ -14,9 +14,17 @@ const Button = ({children, px}) => {
     console.log(e.pageY, 'pagey');
     console.log(btn.current.offsetTop, 'offsetTop');
   };
+  const onMouseLeave = (e) => {
+    setPosition([
+      e.pageX - btn.current.offsetLeft,
+      e.pageY - btn.current.offsetTop,
+    ]);
+    console.log(e.pageY, 'pagey');
+    console.log(btn.current.offsetTop, 'offsetTop');
+  };
 
   return (
-      <Btn px={px} position={position} ref={btn} onMouseEnter={(e) => onMouseEnter(e)}>
+      <Btn px={px} position={position} ref={btn} onMouseEnter={(e) => onMouseEnter(e)} onMouseLeave={(e)=>onMouseLeave(e)} >
         <span className="btnCover" ref={btnCover}></span>
         <span className="title">{children}</span>
       </Btn>
