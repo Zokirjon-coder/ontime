@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Btn = styled.button`
   all: unset;
   padding: 15px ${({px})=>px?px:45}px;
-  background-color: var(--btncl);
+  background-color: var(--main-color);
   position: relative;
   overflow: hidden;
   :hover {
@@ -13,7 +13,7 @@ export const Btn = styled.button`
       transition: width 1.5s, height 1.5s;
     }
     .title {
-      color: white;
+      color: black;
       transition: 1s;
     }
   }
@@ -22,7 +22,7 @@ export const Btn = styled.button`
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: var(--main-color);
+    background: white;
     position: absolute;
     top: ${({ position }) => position[1]}px;
     left: ${({ position }) => position[0]}px;
@@ -34,5 +34,6 @@ export const Btn = styled.button`
     z-index: 2;
     position: relative;
     transition: 0.8s;
+    color: white;
   }
 `;

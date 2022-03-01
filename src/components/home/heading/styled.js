@@ -15,6 +15,7 @@ export const Container = styled.div`
     text-align: center;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    max-width: 891px;
     width: 70%;
     color: #ffffff;
     margin-bottom: 40px;
