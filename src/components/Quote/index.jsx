@@ -74,7 +74,7 @@ const Quote = () => {
           <img src={img} alt="auto" />
         </div>
       </div>
-        <Button px='14.5'>Get a quotation</Button>
+        <Button px='24.5'>Get a quotation</Button>
     </Container>
   );
 };

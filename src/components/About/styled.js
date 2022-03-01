@@ -11,9 +11,16 @@ Container.Flex = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 160px;
+  align-items: center;
 
   .content {
     flex: 1;
+    display: flex;
+    height: 100%!important;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
     p{
         margin-bottom: 8px;
         font-size: 16px;

@@ -27,8 +27,9 @@ export const Container = styled.div`
         input{
           height: 48px;
           width: 100%;
-          padding-left: 28px;
+          padding: 14px 28px;
           margin-top: 8px;
+          font-size: 14px;
         }
       }
       .inp.area{
@@ -39,7 +40,7 @@ export const Container = styled.div`
           min-height: 163px;
           resize: vertical;
           background: transparent;
-          padding: 15px 28px;
+          padding: 14px 28px;
         }
       }
     }

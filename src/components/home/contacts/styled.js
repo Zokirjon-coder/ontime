@@ -3,18 +3,16 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: absolute;
   top: 50%;
-  left: 50px;
+  left: 30px;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 15px;
+  justify-content: space-around;
+  gap: 30px;
   z-index: 2;
-  .line {
-    width: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
-    height: 100px;
+  @media screen and (min-width: 1440px) {
+    left: 50px;
   }
   .icon {
     position: relative;

@@ -9,6 +9,14 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
+
+.wrapper{
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+  height: calc(100% - 83px);
+}
 `
 
 export const Center = styled.div`
@@ -17,4 +25,5 @@ export const Center = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: static;
 `;
