@@ -11,16 +11,12 @@ const Button = ({children, px}) => {
       e.pageX - btn.current.offsetLeft,
       e.pageY - btn.current.offsetTop,
     ]);
-    console.log(e.pageY, 'pagey');
-    console.log(btn.current.offsetTop, 'offsetTop');
   };
   const onMouseLeave = (e) => {
     setPosition([
       e.pageX - btn.current.offsetLeft,
       e.pageY - btn.current.offsetTop,
     ]);
-    console.log(e.pageY, 'pagey');
-    console.log(btn.current.offsetTop, 'offsetTop');
   };
 
   return (

@@ -39,6 +39,7 @@ export const Container = styled.div`
           min-height: 163px;
           resize: vertical;
           background: transparent;
+          padding: 15px 28px;
         }
       }
     }
